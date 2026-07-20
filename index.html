@@ -131,7 +131,27 @@
   .exk,.exr,.exz{padding-left:0;}
   .exk{display:block; color:var(--muted); font-size:.9em;}
   .exr{display:block; color:var(--accent); font-style:italic; font-size:.9em;}
-  .exz{display:block; color:var(--zh); font-size:.95em; margin-top:2px;}
+  .exz{display:inline-block; color:var(--zh); font-size:.95em; margin-top:2px;}
+  .say-btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    vertical-align:middle; margin-left:8px; width:24px; height:24px; padding:0;
+    border:1px solid var(--accent); border-radius:50%;
+    background:transparent; color:var(--accent); cursor:pointer; font-size:12px;
+    line-height:1; transition:background .15s, transform .1s;
+  }
+  .say-btn:hover{background:var(--accent); }
+  .say-btn:active{transform:scale(.9);}
+  .say-btn.playing{background:var(--accent);}
+  .play-sec{
+    vertical-align:middle; margin-left:12px; padding:3px 12px;
+    border:1px solid var(--accent); border-radius:14px;
+    background:transparent; color:var(--accent); cursor:pointer;
+    font-family:inherit; font-size:.5em; font-weight:600; line-height:1.4;
+    white-space:nowrap; transition:background .15s, color .15s, transform .1s;
+  }
+  .play-sec:hover{background:var(--accent); color:#fff;}
+  .play-sec:active{transform:scale(.96);}
+  .play-sec.playing{background:var(--accent); color:#fff;}
   @media (max-width:600px){
     li:has(> .exj){margin-left:-1.2em;}
   }
@@ -6691,140 +6711,140 @@
 <blockquote>
 <p>每個文法均含：接續、意思、例句（附讀音與中文）。共 76 條。</p>
 </blockquote>
-<h2 id="c3s0">4.1 名詞句（判斷句）</h2>
+<h2 id="c3s0">4.1 名詞句（判斷句） <button class="play-sec" type="button" title="播放本節全部例句" aria-label="播放本節全部例句">▶ 全部</button></h2>
 <h3>01. 〜は〜です（～是～）</h3>
 <ul>
 <li><strong>接續</strong>：N1 は N2 です</li>
-<li><span class="exj" data-tag="例">私は学生です。</span><span class="exk">わたしはがくせいです。</span><span class="exr">watashi wa gakusei desu.</span><span class="exz">我是學生。</span></li>
-<li><span class="exj" data-tag="例">田中さんは日本人です。</span><span class="exk">たなかさんはにほんじんです。</span><span class="exr">tanakasan wa nihonjin desu.</span><span class="exz">田中先生是日本人。</span></li>
+<li><span class="exj" data-tag="例">私は学生です。</span><span class="exk">わたしはがくせいです。</span><span class="exr">watashi wa gakusei desu.</span><span class="exz">我是學生。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">田中さんは日本人です。</span><span class="exk">たなかさんはにほんじんです。</span><span class="exr">tanakasan wa nihonjin desu.</span><span class="exz">田中先生是日本人。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>02. 〜は〜じゃありません／ではありません（～不是～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">私は先生じゃありません。</span><span class="exk">わたしはせんせいじゃありません。</span><span class="exr">watashi wa senseija arimasen.</span><span class="exz">我不是老師。</span></li>
+<li><span class="exj" data-tag="例">私は先生じゃありません。</span><span class="exk">わたしはせんせいじゃありません。</span><span class="exr">watashi wa senseija arimasen.</span><span class="exz">我不是老師。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 <li>※ ではありません 較正式，じゃありません 較口語。</li>
 </ul>
 <h3>03. 〜は〜でした（過去肯定）</h3>
 <ul>
-<li><span class="exj" data-tag="例">昨日は雨でした。</span><span class="exk">きのうはあめでした。</span><span class="exr">kinou wa amedeshita.</span><span class="exz">昨天是雨天。</span></li>
+<li><span class="exj" data-tag="例">昨日は雨でした。</span><span class="exk">きのうはあめでした。</span><span class="exr">kinou wa amedeshita.</span><span class="exz">昨天是雨天。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>04. 〜は〜じゃありませんでした（過去否定）</h3>
 <ul>
-<li><span class="exj" data-tag="例">先週は暇じゃありませんでした。</span><span class="exk">せんしゅうはひまじゃありませんでした。</span><span class="exr">senshuu wa himaja arimasendeshita.</span><span class="exz">上週不空閒。</span></li>
+<li><span class="exj" data-tag="例">先週は暇じゃありませんでした。</span><span class="exk">せんしゅうはひまじゃありませんでした。</span><span class="exr">senshuu wa himaja arimasendeshita.</span><span class="exz">上週不空閒。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>05. 〜ですか（疑問句）</h3>
 <ul>
-<li><span class="exj" data-tag="例">あなたは学生ですか。</span><span class="exk">あなたはがくせいですか。</span><span class="exr">anata wa gakusei desu ka.</span><span class="exz">你是學生嗎？</span></li>
+<li><span class="exj" data-tag="例">あなたは学生ですか。</span><span class="exk">あなたはがくせいですか。</span><span class="exr">anata wa gakusei desu ka.</span><span class="exz">你是學生嗎？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 <li>はい、学生です。／いいえ、学生じゃありません。</li>
 </ul>
 <h3>06. 〜も（也）</h3>
 <ul>
-<li><span class="exj" data-tag="例">私も台湾人です。</span><span class="exk">わたしもたいわんじんです。</span><span class="exr">watashi mo taiwanjin desu.</span><span class="exz">我也是台灣人。</span></li>
+<li><span class="exj" data-tag="例">私も台湾人です。</span><span class="exk">わたしもたいわんじんです。</span><span class="exr">watashi mo taiwanjin desu.</span><span class="exz">我也是台灣人。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>07. 〜の（の的三種用法）</h3>
 <ul>
-<li><span class="exj" data-tag="所屬">私の本</span><span class="exk">わたしのほん</span><span class="exr">watashi no hon</span><span class="exz">我的書</span></li>
-<li><span class="exj" data-tag="內容說明">日本語の先生</span><span class="exk">にほんごのせんせい</span><span class="exr">nihon go no sensei</span><span class="exz">日語老師</span></li>
-<li><span class="exj" data-tag="代替名詞">この傘は私のです。</span><span class="exk">このかさはわたしのです。</span><span class="exr">kono kasa wa watashi no desu.</span><span class="exz">這把傘是我的。</span></li>
+<li><span class="exj" data-tag="所屬">私の本</span><span class="exk">わたしのほん</span><span class="exr">watashi no hon</span><span class="exz">我的書</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="內容說明">日本語の先生</span><span class="exk">にほんごのせんせい</span><span class="exr">nihon go no sensei</span><span class="exz">日語老師</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="代替名詞">この傘は私のです。</span><span class="exk">このかさはわたしのです。</span><span class="exr">kono kasa wa watashi no desu.</span><span class="exz">這把傘是我的。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
-<h2 id="c3s1">4.2 指示詞句型</h2>
+<h2 id="c3s1">4.2 指示詞句型 <button class="play-sec" type="button" title="播放本節全部例句" aria-label="播放本節全部例句">▶ 全部</button></h2>
 <h3>08. これ／それ／あれ は 〜です</h3>
 <ul>
-<li><span class="exj" data-tag="例">これは辞書です。</span><span class="exk">これはじしょです。</span><span class="exr">kore wa jisho desu.</span><span class="exz">這是字典。</span></li>
-<li><span class="exj" data-tag="例">あれは何ですか。</span><span class="exk">あれはなんですか。</span><span class="exr">are wa nan desu ka.</span><span class="exz">那是什麼？</span></li>
+<li><span class="exj" data-tag="例">これは辞書です。</span><span class="exk">これはじしょです。</span><span class="exr">kore wa jisho desu.</span><span class="exz">這是字典。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">あれは何ですか。</span><span class="exk">あれはなんですか。</span><span class="exr">are wa nan desu ka.</span><span class="exz">那是什麼？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>09. この／その／あの＋名詞</h3>
 <ul>
-<li><span class="exj" data-tag="例">この本は面白いです。</span><span class="exk">このほんはおもしろいです。</span><span class="exr">kono hon wa omoshiroi desu.</span><span class="exz">這本書很有趣。</span></li>
+<li><span class="exj" data-tag="例">この本は面白いです。</span><span class="exk">このほんはおもしろいです。</span><span class="exr">kono hon wa omoshiroi desu.</span><span class="exz">這本書很有趣。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>10. ここ／そこ／あそこ は 〜です</h3>
 <ul>
-<li><span class="exj" data-tag="例">ここは教室です。</span><span class="exk">ここはきょうしつです。</span><span class="exr">koko wa kyoushitsu desu.</span><span class="exz">這裡是教室。</span></li>
-<li><span class="exj" data-tag="例">トイレはどこですか。</span><span class="exk">トイレはどこですか。</span><span class="exr">toire wa doko desu ka.</span><span class="exz">廁所在哪裡？</span></li>
+<li><span class="exj" data-tag="例">ここは教室です。</span><span class="exk">ここはきょうしつです。</span><span class="exr">koko wa kyoushitsu desu.</span><span class="exz">這裡是教室。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">トイレはどこですか。</span><span class="exk">トイレはどこですか。</span><span class="exr">toire wa doko desu ka.</span><span class="exz">廁所在哪裡？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
-<h2 id="c3s2">4.3 存在句</h2>
+<h2 id="c3s2">4.3 存在句 <button class="play-sec" type="button" title="播放本節全部例句" aria-label="播放本節全部例句">▶ 全部</button></h2>
 <h3>11. 〜に〜があります（無生命物的存在）</h3>
 <ul>
-<li><span class="exj" data-tag="例">机の上に本があります。</span><span class="exk">つくえのうえにほんがあります。</span><span class="exr">tsukue no ue ni hon ga arimasu.</span><span class="exz">桌上有書。</span></li>
+<li><span class="exj" data-tag="例">机の上に本があります。</span><span class="exk">つくえのうえにほんがあります。</span><span class="exr">tsukue no ue ni hon ga arimasu.</span><span class="exz">桌上有書。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>12. 〜に〜がいます（人・動物的存在）</h3>
 <ul>
-<li><span class="exj" data-tag="例">部屋に猫がいます。</span><span class="exk">へやにねこがいます。</span><span class="exr">heya ni neko ga imasu.</span><span class="exz">房間裡有貓。</span></li>
+<li><span class="exj" data-tag="例">部屋に猫がいます。</span><span class="exk">へやにねこがいます。</span><span class="exr">heya ni neko ga imasu.</span><span class="exz">房間裡有貓。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>13. 〜は〜にあります／います（～在～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">銀行は駅の前にあります。</span><span class="exk">ぎんこうはえきのまえにあります。</span><span class="exr">ginkou wa eki no mae ni arimasu.</span><span class="exz">銀行在車站前面。</span></li>
-<li><span class="exj" data-tag="例">先生は教室にいます。</span><span class="exk">せんせいはきょうしつにいます。</span><span class="exr">sensei wa kyoushitsu ni imasu.</span><span class="exz">老師在教室裡。</span></li>
+<li><span class="exj" data-tag="例">銀行は駅の前にあります。</span><span class="exk">ぎんこうはえきのまえにあります。</span><span class="exr">ginkou wa eki no mae ni arimasu.</span><span class="exz">銀行在車站前面。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">先生は教室にいます。</span><span class="exk">せんせいはきょうしつにいます。</span><span class="exr">sensei wa kyoushitsu ni imasu.</span><span class="exz">老師在教室裡。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>14. 位置詞：上・下・中・前・後ろ・隣・近く・間</h3>
 <ul>
-<li><span class="exj" data-tag="例">郵便局は銀行と病院の間にあります。</span><span class="exk">ゆうびんきょくはぎんこうとびょういんのあいだにあります。</span><span class="exr">yuubin kyoku wa ginkou to byouin no aida ni arimasu.</span><span class="exz">郵局在銀行和醫院之間。</span></li>
+<li><span class="exj" data-tag="例">郵便局は銀行と病院の間にあります。</span><span class="exk">ゆうびんきょくはぎんこうとびょういんのあいだにあります。</span><span class="exr">yuubin kyoku wa ginkou to byouin no aida ni arimasu.</span><span class="exz">郵局在銀行和醫院之間。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
-<h2 id="c3s3">4.4 動詞句與助詞</h2>
+<h2 id="c3s3">4.4 動詞句與助詞 <button class="play-sec" type="button" title="播放本節全部例句" aria-label="播放本節全部例句">▶ 全部</button></h2>
 <h3>15. 〜を＋他動詞（動作對象）</h3>
 <ul>
-<li><span class="exj" data-tag="例">パンを食べます。</span><span class="exk">パンをたべます。</span><span class="exr">pan o tabemasu.</span><span class="exz">吃麵包。</span></li>
+<li><span class="exj" data-tag="例">パンを食べます。</span><span class="exk">パンをたべます。</span><span class="exr">pan o tabemasu.</span><span class="exz">吃麵包。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>16. 〜へ行きます／来ます／帰ります（方向）</h3>
 <ul>
-<li><span class="exj" data-tag="例">明日学校へ行きます。</span><span class="exk">あしたがっこうへいきます。</span><span class="exr">ashita gakkou e ikimasu.</span><span class="exz">明天去學校。</span></li>
+<li><span class="exj" data-tag="例">明日学校へ行きます。</span><span class="exk">あしたがっこうへいきます。</span><span class="exr">ashita gakkou e ikimasu.</span><span class="exz">明天去學校。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>17. 〜に行きます（目的地，可與へ互換）</h3>
 <ul>
-<li><span class="exj" data-tag="例">日本に行きたいです。</span><span class="exk">にほんにいきたいです。</span><span class="exr">nihon ni ikitai desu.</span><span class="exz">想去日本。</span></li>
+<li><span class="exj" data-tag="例">日本に行きたいです。</span><span class="exk">にほんにいきたいです。</span><span class="exr">nihon ni ikitai desu.</span><span class="exz">想去日本。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>18. 〜で（動作發生的場所）</h3>
 <ul>
-<li><span class="exj" data-tag="例">図書館で勉強します。</span><span class="exk">としょかんでべんきょうします。</span><span class="exr">toshokan de benkyou shimasu.</span><span class="exz">在圖書館讀書。</span></li>
+<li><span class="exj" data-tag="例">図書館で勉強します。</span><span class="exk">としょかんでべんきょうします。</span><span class="exr">toshokan de benkyou shimasu.</span><span class="exz">在圖書館讀書。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 <li>※ 比較：に＝存在場所、で＝動作場所。</li>
 </ul>
 <h3>19. 〜で（手段、工具、材料）</h3>
 <ul>
-<li><span class="exj" data-tag="例">バスで会社へ行きます。</span><span class="exk">バスでかいしゃへいきます。</span><span class="exr">basu de kaisha e ikimasu.</span><span class="exz">搭公車去公司。</span></li>
-<li><span class="exj" data-tag="例">日本語でレポートを書きます。</span><span class="exk">にほんごでレポートをかきます。</span><span class="exr">nihon go de repooto o kakimasu.</span><span class="exz">用日語寫報告。</span></li>
+<li><span class="exj" data-tag="例">バスで会社へ行きます。</span><span class="exk">バスでかいしゃへいきます。</span><span class="exr">basu de kaisha e ikimasu.</span><span class="exz">搭公車去公司。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">日本語でレポートを書きます。</span><span class="exk">にほんごでレポートをかきます。</span><span class="exr">nihon go de repooto o kakimasu.</span><span class="exz">用日語寫報告。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>20. 〜に（時間點）</h3>
 <ul>
-<li><span class="exj" data-tag="例">七時に起きます。</span><span class="exk">しちじにおきます。</span><span class="exr">shichi ji ni okimasu.</span><span class="exz">七點起床。</span></li>
+<li><span class="exj" data-tag="例">七時に起きます。</span><span class="exk">しちじにおきます。</span><span class="exr">shichi ji ni okimasu.</span><span class="exz">七點起床。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 <li>※ 「明日、毎日、今週」等相對時間詞不加に。</li>
 </ul>
 <h3>21. 〜に（動作對象：給、見、寄）</h3>
 <ul>
-<li><span class="exj" data-tag="例">友達に電話をかけます。</span><span class="exk">ともだちにでんわをかけます。</span><span class="exr">tomodachi ni denwa o kakemasu.</span><span class="exz">打電話給朋友。</span></li>
-<li><span class="exj" data-tag="例">母に手紙を書きます。</span><span class="exk">ははにてがみをかきます。</span><span class="exr">haha ni tegami o kakimasu.</span><span class="exz">寫信給媽媽。</span></li>
+<li><span class="exj" data-tag="例">友達に電話をかけます。</span><span class="exk">ともだちにでんわをかけます。</span><span class="exr">tomodachi ni denwa o kakemasu.</span><span class="exz">打電話給朋友。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">母に手紙を書きます。</span><span class="exk">ははにてがみをかきます。</span><span class="exr">haha ni tegami o kakimasu.</span><span class="exz">寫信給媽媽。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>22. 〜と（和～一起）</h3>
 <ul>
-<li><span class="exj" data-tag="例">家族と旅行します。</span><span class="exk">かぞくとりょこうします。</span><span class="exr">kazoku to ryokou shimasu.</span><span class="exz">和家人去旅行。</span></li>
+<li><span class="exj" data-tag="例">家族と旅行します。</span><span class="exk">かぞくとりょこうします。</span><span class="exr">kazoku to ryokou shimasu.</span><span class="exz">和家人去旅行。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>23. 〜と（並列：和）</h3>
 <ul>
-<li><span class="exj" data-tag="例">机の上に本とペンがあります。</span><span class="exk">つくえのうえにほんとペンがあります。</span><span class="exr">tsukue no ue ni hon to pen ga arimasu.</span><span class="exz">桌上有書和筆。</span></li>
+<li><span class="exj" data-tag="例">机の上に本とペンがあります。</span><span class="exk">つくえのうえにほんとペンがあります。</span><span class="exr">tsukue no ue ni hon to pen ga arimasu.</span><span class="exz">桌上有書和筆。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>24. 〜や〜（など）（列舉，暗示還有其他）</h3>
 <ul>
-<li><span class="exj" data-tag="例">かばんの中に本やノートなどがあります。</span><span class="exk">かばんのなかにほんやノートなどがあります。</span><span class="exr">kaban no naka ni hon ya nooto nado ga arimasu.</span><span class="exz">包包裡有書、筆記本等等。</span></li>
+<li><span class="exj" data-tag="例">かばんの中に本やノートなどがあります。</span><span class="exk">かばんのなかにほんやノートなどがあります。</span><span class="exr">kaban no naka ni hon ya nooto nado ga arimasu.</span><span class="exz">包包裡有書、筆記本等等。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>25. 〜から／〜まで（從～／到～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">九時から五時まで働きます。</span><span class="exk">くじからごじまではたらきます。</span><span class="exr">ku ji kara go ji made hatarakimasu.</span><span class="exz">從九點工作到五點。</span></li>
-<li><span class="exj" data-tag="例">家から駅まで歩きます。</span><span class="exk">いえからえきまであるきます。</span><span class="exr">ie kara eki made arukimasu.</span><span class="exz">從家走到車站。</span></li>
+<li><span class="exj" data-tag="例">九時から五時まで働きます。</span><span class="exk">くじからごじまではたらきます。</span><span class="exr">ku ji kara go ji made hatarakimasu.</span><span class="exz">從九點工作到五點。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">家から駅まで歩きます。</span><span class="exk">いえからえきまであるきます。</span><span class="exr">ie kara eki made arukimasu.</span><span class="exz">從家走到車站。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>26. 〜から（原因、理由）</h3>
 <ul>
-<li><span class="exj" data-tag="例">時間がありませんから、タクシーで行きます。</span><span class="exk">じかんがありませんから、タクシーでいきます。</span><span class="exr">jikan ga arimasen kara, takushii de ikimasu.</span><span class="exz">因為沒時間，所以搭計程車去。</span></li>
+<li><span class="exj" data-tag="例">時間がありませんから、タクシーで行きます。</span><span class="exk">じかんがありませんから、タクシーでいきます。</span><span class="exr">jikan ga arimasen kara, takushii de ikimasu.</span><span class="exz">因為沒時間，所以搭計程車去。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>27. 〜が（逆接：但是）</h3>
 <ul>
-<li><span class="exj" data-tag="例">日本語は難しいですが、面白いです。</span><span class="exk">にほんごはむずかしいですが、おもしろいです。</span><span class="exr">nihon go wa muzukashii desu ga, omoshiroi desu.</span><span class="exz">日語很難，但是很有趣。</span></li>
+<li><span class="exj" data-tag="例">日本語は難しいですが、面白いです。</span><span class="exk">にほんごはむずかしいですが、おもしろいです。</span><span class="exr">nihon go wa muzukashii desu ga, omoshiroi desu.</span><span class="exz">日語很難，但是很有趣。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>28. 〜が（對象：好き・嫌い・上手・下手・欲しい・分かる）</h3>
 <ul>
-<li><span class="exj" data-tag="例">私は音楽が好きです。</span><span class="exk">わたしはおんがくがすきです。</span><span class="exr">watashi wa ongaku ga suki desu.</span><span class="exz">我喜歡音樂。</span></li>
-<li><span class="exj" data-tag="例">彼は日本語が分かります。</span><span class="exk">かれはにほんごがわかります。</span><span class="exr">kare wa nihon go ga wakarimasu.</span><span class="exz">他懂日語。</span></li>
+<li><span class="exj" data-tag="例">私は音楽が好きです。</span><span class="exk">わたしはおんがくがすきです。</span><span class="exr">watashi wa ongaku ga suki desu.</span><span class="exz">我喜歡音樂。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">彼は日本語が分かります。</span><span class="exk">かれはにほんごがわかります。</span><span class="exr">kare wa nihon go ga wakarimasu.</span><span class="exz">他懂日語。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>29. 〜か（選擇：或）</h3>
 <ul>
-<li><span class="exj" data-tag="例">コーヒーか紅茶を飲みます。</span><span class="exk">コーヒーかこうちゃをのみます。</span><span class="exr">koohii ka koucha o nomimasu.</span><span class="exz">喝咖啡或紅茶。</span></li>
+<li><span class="exj" data-tag="例">コーヒーか紅茶を飲みます。</span><span class="exk">コーヒーかこうちゃをのみます。</span><span class="exr">koohii ka koucha o nomimasu.</span><span class="exz">喝咖啡或紅茶。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>30. 〜ね／〜よ（終助詞）</h3>
 <ul>
@@ -6833,102 +6853,102 @@
 </ul>
 <h3>31. 〜だけ（只有）</h3>
 <ul>
-<li><span class="exj" data-tag="例">朝はコーヒーだけ飲みます。</span><span class="exk">あさはコーヒーだけのみます。</span><span class="exr">asa wa koohii dake nomimasu.</span><span class="exz">早上只喝咖啡。</span></li>
+<li><span class="exj" data-tag="例">朝はコーヒーだけ飲みます。</span><span class="exk">あさはコーヒーだけのみます。</span><span class="exr">asa wa koohii dake nomimasu.</span><span class="exz">早上只喝咖啡。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>32. 〜ぐらい／くらい（大約～量）</h3>
 <ul>
-<li><span class="exj" data-tag="例">毎日二時間ぐらい勉強します。</span><span class="exk">まいにちにじかんぐらいべんきょうします。</span><span class="exr">mainichi ni jikan gurai benkyou shimasu.</span><span class="exz">每天讀書大約兩小時。</span></li>
+<li><span class="exj" data-tag="例">毎日二時間ぐらい勉強します。</span><span class="exk">まいにちにじかんぐらいべんきょうします。</span><span class="exr">mainichi ni jikan gurai benkyou shimasu.</span><span class="exz">每天讀書大約兩小時。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>33. 〜ごろ（大約～時間點）</h3>
 <ul>
-<li><span class="exj" data-tag="例">七時ごろ家へ帰ります。</span><span class="exk">しちじごろいえへかえります。</span><span class="exr">shichi ji goro ie e kaerimasu.</span><span class="exz">七點左右回家。</span></li>
+<li><span class="exj" data-tag="例">七時ごろ家へ帰ります。</span><span class="exk">しちじごろいえへかえります。</span><span class="exr">shichi ji goro ie e kaerimasu.</span><span class="exz">七點左右回家。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>34. 〜しか〜ない（只有～，後接否定）</h3>
 <ul>
-<li><span class="exj" data-tag="例">百円しかありません。</span><span class="exk">ひゃくえんしかありません。</span><span class="exr">hyaku en shika arimasen.</span><span class="exz">只有一百日圓。</span></li>
+<li><span class="exj" data-tag="例">百円しかありません。</span><span class="exk">ひゃくえんしかありません。</span><span class="exr">hyaku en shika arimasen.</span><span class="exz">只有一百日圓。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
-<h2 id="c3s4">4.5 動詞時態（ます形變化）</h2>
+<h2 id="c3s4">4.5 動詞時態（ます形變化） <button class="play-sec" type="button" title="播放本節全部例句" aria-label="播放本節全部例句">▶ 全部</button></h2>
 <h3>35. 〜ます／〜ません（現在肯定／否定）</h3>
 <ul>
-<li><span class="exj" data-tag="例">毎朝新聞を読みます。</span><span class="exk">まいあさしんぶんをよみます。</span><span class="exr">maiasa shinbun o yomimasu.</span><span class="exz">每天早上看報紙。</span></li>
-<li><span class="exj" data-tag="例">お酒を飲みません。</span><span class="exk">おさけをのみません。</span><span class="exr">o sake o nomimasen.</span><span class="exz">不喝酒。</span></li>
+<li><span class="exj" data-tag="例">毎朝新聞を読みます。</span><span class="exk">まいあさしんぶんをよみます。</span><span class="exr">maiasa shinbun o yomimasu.</span><span class="exz">每天早上看報紙。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">お酒を飲みません。</span><span class="exk">おさけをのみません。</span><span class="exr">o sake o nomimasen.</span><span class="exz">不喝酒。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>36. 〜ました／〜ませんでした（過去肯定／否定）</h3>
 <ul>
-<li><span class="exj" data-tag="例">昨日映画を見ました。</span><span class="exk">きのうえいがをみました。</span><span class="exr">kinou eiga o mimashita.</span><span class="exz">昨天看了電影。</span></li>
-<li><span class="exj" data-tag="例">宿題をしませんでした。</span><span class="exk">しゅくだいをしませんでした。</span><span class="exr">shukudai o shimasendeshita.</span><span class="exz">沒有做作業。</span></li>
+<li><span class="exj" data-tag="例">昨日映画を見ました。</span><span class="exk">きのうえいがをみました。</span><span class="exr">kinou eiga o mimashita.</span><span class="exz">昨天看了電影。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">宿題をしませんでした。</span><span class="exk">しゅくだいをしませんでした。</span><span class="exr">shukudai o shimasendeshita.</span><span class="exz">沒有做作業。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>37. もう〜ました（已經～了）</h3>
 <ul>
-<li><span class="exj" data-tag="例">もう昼ご飯を食べました。</span><span class="exk">もうひるごはんをたべました。</span><span class="exr">mou hirugohan o tabemashita.</span><span class="exz">已經吃過午餐了。</span></li>
+<li><span class="exj" data-tag="例">もう昼ご飯を食べました。</span><span class="exk">もうひるごはんをたべました。</span><span class="exr">mou hirugohan o tabemashita.</span><span class="exz">已經吃過午餐了。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>38. まだ〜ていません／まだです（還沒～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">まだ食べていません。</span><span class="exk">まだたべていません。</span><span class="exr">mada tabete imasen.</span><span class="exz">還沒吃。</span></li>
+<li><span class="exj" data-tag="例">まだ食べていません。</span><span class="exk">まだたべていません。</span><span class="exr">mada tabete imasen.</span><span class="exz">還沒吃。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
-<h2 id="c3s5">4.6 邀約・請求・意志</h2>
+<h2 id="c3s5">4.6 邀約・請求・意志 <button class="play-sec" type="button" title="播放本節全部例句" aria-label="播放本節全部例句">▶ 全部</button></h2>
 <h3>39. 〜ませんか（要不要一起～？邀約）</h3>
 <ul>
-<li><span class="exj" data-tag="例">一緒に映画を見ませんか。</span><span class="exk">いっしょにえいがをみませんか。</span><span class="exr">issho ni eiga o mimasen ka.</span><span class="exz">要不要一起看電影？</span></li>
+<li><span class="exj" data-tag="例">一緒に映画を見ませんか。</span><span class="exk">いっしょにえいがをみませんか。</span><span class="exr">issho ni eiga o mimasen ka.</span><span class="exz">要不要一起看電影？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>40. 〜ましょう（～吧！提議）</h3>
 <ul>
-<li><span class="exj" data-tag="例">ちょっと休みましょう。</span><span class="exk">ちょっとやすみましょう。</span><span class="exr">chotto yasumimashou.</span><span class="exz">休息一下吧。</span></li>
+<li><span class="exj" data-tag="例">ちょっと休みましょう。</span><span class="exk">ちょっとやすみましょう。</span><span class="exr">chotto yasumimashou.</span><span class="exz">休息一下吧。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>41. 〜ましょうか（我來～好嗎？主動提議）</h3>
 <ul>
-<li><span class="exj" data-tag="例">荷物を持ちましょうか。</span><span class="exk">にもつをもちましょうか。</span><span class="exr">nimotsu o mochimashou ka.</span><span class="exz">我幫你拿行李好嗎？</span></li>
+<li><span class="exj" data-tag="例">荷物を持ちましょうか。</span><span class="exk">にもつをもちましょうか。</span><span class="exr">nimotsu o mochimashou ka.</span><span class="exz">我幫你拿行李好嗎？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>42. 〜たいです（想要做～）</h3>
 <ul>
 <li>接續：ます形去ます＋たい</li>
-<li><span class="exj" data-tag="例">日本へ行きたいです。</span><span class="exk">にほんへいきたいです。</span><span class="exr">nihon e ikitai desu.</span><span class="exz">想去日本。</span></li>
-<li><span class="exj" data-tag="例">何も食べたくないです。</span><span class="exk">なにもたべたくないです。</span><span class="exr">nani mo tabetaku nai desu.</span><span class="exz">什麼都不想吃。</span></li>
+<li><span class="exj" data-tag="例">日本へ行きたいです。</span><span class="exk">にほんへいきたいです。</span><span class="exr">nihon e ikitai desu.</span><span class="exz">想去日本。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">何も食べたくないです。</span><span class="exk">なにもたべたくないです。</span><span class="exr">nani mo tabetaku nai desu.</span><span class="exz">什麼都不想吃。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 <li>※ たい 變化同い形容詞。</li>
 </ul>
 <h3>43. 〜が欲しいです（想要～東西）</h3>
 <ul>
-<li><span class="exj" data-tag="例">新しいパソコンが欲しいです。</span><span class="exk">あたらしいパソコンがほしいです。</span><span class="exr">atarashii pasokon ga hoshii desu.</span><span class="exz">想要新電腦。</span></li>
+<li><span class="exj" data-tag="例">新しいパソコンが欲しいです。</span><span class="exk">あたらしいパソコンがほしいです。</span><span class="exr">atarashii pasokon ga hoshii desu.</span><span class="exz">想要新電腦。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>44. 〜てください（請～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">ここに名前を書いてください。</span><span class="exk">ここになまえをかいてください。</span><span class="exr">koko ni namae o kaite kudasai.</span><span class="exz">請在這裡寫名字。</span></li>
+<li><span class="exj" data-tag="例">ここに名前を書いてください。</span><span class="exk">ここになまえをかいてください。</span><span class="exr">koko ni namae o kaite kudasai.</span><span class="exz">請在這裡寫名字。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>45. 〜ないでください（請不要～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">ここで写真を撮らないでください。</span><span class="exk">ここでしゃしんをとらないでください。</span><span class="exr">koko de shashin o toranaide kudasai.</span><span class="exz">請不要在這裡拍照。</span></li>
+<li><span class="exj" data-tag="例">ここで写真を撮らないでください。</span><span class="exk">ここでしゃしんをとらないでください。</span><span class="exr">koko de shashin o toranaide kudasai.</span><span class="exz">請不要在這裡拍照。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>46. 〜をください（請給我～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">この りんごを三つください。</span><span class="exk">このりんごをみっつください。</span><span class="exr">kono ringo o mittsu kudasai.</span><span class="exz">請給我三個蘋果。</span></li>
+<li><span class="exj" data-tag="例">この りんごを三つください。</span><span class="exk">このりんごをみっつください。</span><span class="exr">kono ringo o mittsu kudasai.</span><span class="exz">請給我三個蘋果。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
-<h2 id="c3s6">4.7 て形句型</h2>
+<h2 id="c3s6">4.7 て形句型 <button class="play-sec" type="button" title="播放本節全部例句" aria-label="播放本節全部例句">▶ 全部</button></h2>
 <h3>47. 〜ています（正在～／狀態持續）</h3>
 <ul>
-<li><span class="exj" data-tag="進行">今、雨が降っています。</span><span class="exk">いま、あめがふっています。</span><span class="exr">ima, ame ga futte imasu.</span><span class="exz">現在正在下雨。</span></li>
-<li><span class="exj" data-tag="狀態">私は台北に住んでいます。</span><span class="exk">わたしはたいぺいにすんでいます。</span><span class="exr">watashi wa taipei ni sunde imasu.</span><span class="exz">我住在台北。</span></li>
-<li><span class="exj" data-tag="職業">兄は銀行で働いています。</span><span class="exk">あにはぎんこうではたらいています。</span><span class="exr">ani wa ginkou de hataraite imasu.</span><span class="exz">哥哥在銀行工作。</span></li>
+<li><span class="exj" data-tag="進行">今、雨が降っています。</span><span class="exk">いま、あめがふっています。</span><span class="exr">ima, ame ga futte imasu.</span><span class="exz">現在正在下雨。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="狀態">私は台北に住んでいます。</span><span class="exk">わたしはたいぺいにすんでいます。</span><span class="exr">watashi wa taipei ni sunde imasu.</span><span class="exz">我住在台北。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="職業">兄は銀行で働いています。</span><span class="exk">あにはぎんこうではたらいています。</span><span class="exr">ani wa ginkou de hataraite imasu.</span><span class="exz">哥哥在銀行工作。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>48. 〜てから（做完～之後）</h3>
 <ul>
-<li><span class="exj" data-tag="例">手を洗ってから、ご飯を食べます。</span><span class="exk">てをあらってから、ごはんをたべます。</span><span class="exr">te o aratte kara, gohan o tabemasu.</span><span class="exz">洗手後吃飯。</span></li>
+<li><span class="exj" data-tag="例">手を洗ってから、ご飯を食べます。</span><span class="exk">てをあらってから、ごはんをたべます。</span><span class="exr">te o aratte kara, gohan o tabemasu.</span><span class="exz">洗手後吃飯。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>49. 〜て、〜（動作接續）</h3>
 <ul>
-<li><span class="exj" data-tag="例">朝起きて、顔を洗って、朝ご飯を食べます。</span><span class="exk">あさおきて、かおをあらって、あさごはんをたべます。</span><span class="exr">asa okite, kao o aratte, asagohan o tabemasu.</span><span class="exz">早上起床、洗臉、吃早餐。</span></li>
+<li><span class="exj" data-tag="例">朝起きて、顔を洗って、朝ご飯を食べます。</span><span class="exk">あさおきて、かおをあらって、あさごはんをたべます。</span><span class="exr">asa okite, kao o aratte, asagohan o tabemasu.</span><span class="exz">早上起床、洗臉、吃早餐。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>50. 〜てもいいです（可以～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">ここに座ってもいいですか。</span><span class="exk">ここにすわってもいいですか。</span><span class="exr">koko ni suwatte mo ii desu ka.</span><span class="exz">可以坐這裡嗎？</span></li>
+<li><span class="exj" data-tag="例">ここに座ってもいいですか。</span><span class="exk">ここにすわってもいいですか。</span><span class="exr">koko ni suwatte mo ii desu ka.</span><span class="exz">可以坐這裡嗎？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>51. 〜てはいけません（不可以～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">教室でたばこを吸ってはいけません。</span><span class="exk">きょうしつでたばこをすってはいけません。</span><span class="exr">kyoushitsu de tabako o sutte wa ikemasen.</span><span class="exz">不可以在教室抽菸。</span></li>
+<li><span class="exj" data-tag="例">教室でたばこを吸ってはいけません。</span><span class="exk">きょうしつでたばこをすってはいけません。</span><span class="exr">kyoushitsu de tabako o sutte wa ikemasen.</span><span class="exz">不可以在教室抽菸。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
-<h2 id="c3s7">4.8 形容詞句型</h2>
+<h2 id="c3s7">4.8 形容詞句型 <button class="play-sec" type="button" title="播放本節全部例句" aria-label="播放本節全部例句">▶ 全部</button></h2>
 <h3>52. い形容詞的變化</h3>
 <ul>
-<li><span class="exj" data-tag="現在肯定">高いです</span><span class="exk">たかいです</span><span class="exr">takai desu</span><span class="exz">貴</span></li>
+<li><span class="exj" data-tag="現在肯定">高いです</span><span class="exk">たかいです</span><span class="exr">takai desu</span><span class="exz">貴</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 <li>現在否定：高くないです／高くありません</li>
 <li>過去肯定：高かったです</li>
 <li>過去否定：高くなかったです</li>
@@ -6936,117 +6956,117 @@
 </ul>
 <h3>53. な形容詞的變化</h3>
 <ul>
-<li><span class="exj" data-tag="現在肯定">静かです</span><span class="exk">しずかです</span><span class="exr">shizuka desu</span><span class="exz">安靜</span></li>
+<li><span class="exj" data-tag="現在肯定">静かです</span><span class="exk">しずかです</span><span class="exr">shizuka desu</span><span class="exz">安靜</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 <li>現在否定：静かじゃありません</li>
 <li>過去肯定：静かでした</li>
 <li>過去否定：静かじゃありませんでした</li>
 </ul>
 <h3>54. 形容詞＋名詞</h3>
 <ul>
-<li><span class="exj" data-tag="い形">大きい家</span><span class="exk">おおきいいえ</span><span class="exr">ookii ie</span><span class="exz">大房子</span></li>
-<li><span class="exj" data-tag="な形">綺麗な花</span><span class="exk">きれいなはな</span><span class="exr">kireina hana</span><span class="exz">漂亮的花</span></li>
+<li><span class="exj" data-tag="い形">大きい家</span><span class="exk">おおきいいえ</span><span class="exr">ookii ie</span><span class="exz">大房子</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="な形">綺麗な花</span><span class="exk">きれいなはな</span><span class="exr">kireina hana</span><span class="exz">漂亮的花</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>55. 〜くて／〜で（形容詞接續）</h3>
 <ul>
-<li><span class="exj" data-tag="例">この部屋は広くて、明るいです。</span><span class="exk">このへやはひろくて、あかるいです。</span><span class="exr">kono heya wa hirokute, akarui desu.</span><span class="exz">這個房間又寬敞又明亮。</span></li>
-<li><span class="exj" data-tag="例">彼女は綺麗で、親切です。</span><span class="exk">かのじょはきれいで、しんせつです。</span><span class="exr">kanojo wa kirei de, shinsetsu desu.</span><span class="exz">她漂亮又親切。</span></li>
+<li><span class="exj" data-tag="例">この部屋は広くて、明るいです。</span><span class="exk">このへやはひろくて、あかるいです。</span><span class="exr">kono heya wa hirokute, akarui desu.</span><span class="exz">這個房間又寬敞又明亮。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">彼女は綺麗で、親切です。</span><span class="exk">かのじょはきれいで、しんせつです。</span><span class="exr">kanojo wa kirei de, shinsetsu desu.</span><span class="exz">她漂亮又親切。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>56. 〜くなります／〜になります（變得～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">暖かくなりました。</span><span class="exk">あたたかくなりました。</span><span class="exr">atatakaku narimashita.</span><span class="exz">變暖和了。</span></li>
-<li><span class="exj" data-tag="例">日本語が上手になりました。</span><span class="exk">にほんごがじょうずになりました。</span><span class="exr">nihon go ga jouzuni narimashita.</span><span class="exz">日語變好了。</span></li>
-<li><span class="exj" data-tag="例">医者になりたいです。</span><span class="exk">いしゃになりたいです。</span><span class="exr">isha ni naritai desu.</span><span class="exz">想成為醫生。</span></li>
+<li><span class="exj" data-tag="例">暖かくなりました。</span><span class="exk">あたたかくなりました。</span><span class="exr">atatakaku narimashita.</span><span class="exz">變暖和了。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">日本語が上手になりました。</span><span class="exk">にほんごがじょうずになりました。</span><span class="exr">nihon go ga jouzuni narimashita.</span><span class="exz">日語變好了。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">医者になりたいです。</span><span class="exk">いしゃになりたいです。</span><span class="exr">isha ni naritai desu.</span><span class="exz">想成為醫生。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>57. どんな＋名詞（什麼樣的～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">どんな音楽が好きですか。</span><span class="exk">どんなおんがくがすきですか。</span><span class="exr">donna ongaku ga suki desu ka.</span><span class="exz">你喜歡什麼樣的音樂？</span></li>
+<li><span class="exj" data-tag="例">どんな音楽が好きですか。</span><span class="exk">どんなおんがくがすきですか。</span><span class="exr">donna ongaku ga suki desu ka.</span><span class="exz">你喜歡什麼樣的音樂？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>58. 〜はどうですか（～如何？）</h3>
 <ul>
-<li><span class="exj" data-tag="例">日本の生活はどうですか。</span><span class="exk">にほんのせいかつはどうですか。</span><span class="exr">nihon no seikatsu wa dou desu ka.</span><span class="exz">日本的生活如何？</span></li>
+<li><span class="exj" data-tag="例">日本の生活はどうですか。</span><span class="exk">にほんのせいかつはどうですか。</span><span class="exr">nihon no seikatsu wa dou desu ka.</span><span class="exz">日本的生活如何？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
-<h2 id="c3s8">4.9 比較句型</h2>
+<h2 id="c3s8">4.9 比較句型 <button class="play-sec" type="button" title="播放本節全部例句" aria-label="播放本節全部例句">▶ 全部</button></h2>
 <h3>59. AはBより〜（A比B～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">飛行機は電車より速いです。</span><span class="exk">ひこうきはでんしゃよりはやいです。</span><span class="exr">hikou ki wa densha yori hayai desu.</span><span class="exz">飛機比電車快。</span></li>
+<li><span class="exj" data-tag="例">飛行機は電車より速いです。</span><span class="exk">ひこうきはでんしゃよりはやいです。</span><span class="exr">hikou ki wa densha yori hayai desu.</span><span class="exz">飛機比電車快。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>60. AとBとどちらが〜（A和B哪個～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">コーヒーと紅茶とどちらが好きですか。</span><span class="exk">コーヒーとこうちゃとどちらがすきですか。</span><span class="exr">koohii to koucha to dochira ga suki desu ka.</span><span class="exz">咖啡和紅茶你喜歡哪個？</span></li>
-<li><span class="exj" data-tag="答">コーヒーのほうが好きです。</span><span class="exk">コーヒーのほうがすきです。</span><span class="exr">koohii no hou ga suki desu.</span><span class="exz">比較喜歡咖啡。</span></li>
+<li><span class="exj" data-tag="例">コーヒーと紅茶とどちらが好きですか。</span><span class="exk">コーヒーとこうちゃとどちらがすきですか。</span><span class="exr">koohii to koucha to dochira ga suki desu ka.</span><span class="exz">咖啡和紅茶你喜歡哪個？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="答">コーヒーのほうが好きです。</span><span class="exk">コーヒーのほうがすきです。</span><span class="exr">koohii no hou ga suki desu.</span><span class="exz">比較喜歡咖啡。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>61. 〜（の中）で〜が一番〜（在～之中最～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">果物の中でりんごが一番好きです。</span><span class="exk">くだもののなかでりんごがいちばんすきです。</span><span class="exr">kudamono no naka de ringo ga ichiban suki desu.</span><span class="exz">水果之中最喜歡蘋果。</span></li>
-<li><span class="exj" data-tag="例">一年で八月が一番暑いです。</span><span class="exk">いちねんではちがつがいちばんあついです。</span><span class="exr">ichi nen de hachi gatsu ga ichiban atsui desu.</span><span class="exz">一年之中八月最熱。</span></li>
+<li><span class="exj" data-tag="例">果物の中でりんごが一番好きです。</span><span class="exk">くだもののなかでりんごがいちばんすきです。</span><span class="exr">kudamono no naka de ringo ga ichiban suki desu.</span><span class="exz">水果之中最喜歡蘋果。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">一年で八月が一番暑いです。</span><span class="exk">いちねんではちがつがいちばんあついです。</span><span class="exr">ichi nen de hachi gatsu ga ichiban atsui desu.</span><span class="exz">一年之中八月最熱。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
-<h2 id="c3s9">4.10 頻率・程度副詞句型</h2>
+<h2 id="c3s9">4.10 頻率・程度副詞句型 <button class="play-sec" type="button" title="播放本節全部例句" aria-label="播放本節全部例句">▶ 全部</button></h2>
 <h3>62. よく／時々／あまり／全然</h3>
 <ul>
-<li><span class="exj" data-tag="例">よく映画を見ます。</span><span class="exk">よくえいがをみます。</span><span class="exr">yoku eiga o mimasu.</span><span class="exz">常常看電影。</span></li>
-<li><span class="exj" data-tag="例">あまりテレビを見ません。</span><span class="exk">あまりテレビをみません。</span><span class="exr">amari terebi o mimasen.</span><span class="exz">不太看電視。</span></li>
-<li><span class="exj" data-tag="例">全然分かりません。</span><span class="exk">ぜんぜんわかりません。</span><span class="exr">zenzen wakarimasen.</span><span class="exz">完全不懂。</span></li>
+<li><span class="exj" data-tag="例">よく映画を見ます。</span><span class="exk">よくえいがをみます。</span><span class="exr">yoku eiga o mimasu.</span><span class="exz">常常看電影。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">あまりテレビを見ません。</span><span class="exk">あまりテレビをみません。</span><span class="exr">amari terebi o mimasen.</span><span class="exz">不太看電視。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">全然分かりません。</span><span class="exk">ぜんぜんわかりません。</span><span class="exr">zenzen wakarimasen.</span><span class="exz">完全不懂。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 <li>※ あまり・全然 後面必接否定。</li>
 </ul>
 <h3>63. とても／ちょっと</h3>
 <ul>
-<li><span class="exj" data-tag="例">この料理はとても美味しいです。</span><span class="exk">このりょうりはとてもおいしいです。</span><span class="exr">kono ryouri wa totemo oishii desu.</span><span class="exz">這道菜非常好吃。</span></li>
+<li><span class="exj" data-tag="例">この料理はとても美味しいです。</span><span class="exk">このりょうりはとてもおいしいです。</span><span class="exr">kono ryouri wa totemo oishii desu.</span><span class="exz">這道菜非常好吃。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
-<h2 id="c3s10">4.11 其他重要句型</h2>
+<h2 id="c3s10">4.11 其他重要句型 <button class="play-sec" type="button" title="播放本節全部例句" aria-label="播放本節全部例句">▶ 全部</button></h2>
 <h3>64. 〜ながら（一邊～一邊～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">音楽を聞きながら、勉強します。</span><span class="exk">おんがくをききながら、べんきょうします。</span><span class="exr">ongaku o kiki nagara, benkyou shimasu.</span><span class="exz">一邊聽音樂一邊讀書。</span></li>
+<li><span class="exj" data-tag="例">音楽を聞きながら、勉強します。</span><span class="exk">おんがくをききながら、べんきょうします。</span><span class="exr">ongaku o kiki nagara, benkyou shimasu.</span><span class="exz">一邊聽音樂一邊讀書。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>65. 〜たり〜たりします（又～又～、列舉動作）</h3>
 <ul>
-<li><span class="exj" data-tag="例">日曜日は掃除したり、洗濯したりします。</span><span class="exk">にちようびはそうじしたり、せんたくしたりします。</span><span class="exr">nichiyou bi wa souji shi tari, sentaku shi tari shimasu.</span><span class="exz">星期天打掃、洗衣服等等。</span></li>
+<li><span class="exj" data-tag="例">日曜日は掃除したり、洗濯したりします。</span><span class="exk">にちようびはそうじしたり、せんたくしたりします。</span><span class="exr">nichiyou bi wa souji shi tari, sentaku shi tari shimasu.</span><span class="exz">星期天打掃、洗衣服等等。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>66. 〜の前に（～之前）</h3>
 <ul>
-<li><span class="exj" data-tag="例">寝る前に、歯を磨きます。</span><span class="exk">ねるまえに、はをみがきます。</span><span class="exr">neru mae ni, ha o migakimasu.</span><span class="exz">睡前刷牙。</span></li>
-<li><span class="exj" data-tag="例">食事の前に手を洗います。</span><span class="exk">しょくじのまえにてをあらいます。</span><span class="exr">shokuji no mae ni te o araimasu.</span><span class="exz">吃飯前洗手。</span></li>
+<li><span class="exj" data-tag="例">寝る前に、歯を磨きます。</span><span class="exk">ねるまえに、はをみがきます。</span><span class="exr">neru mae ni, ha o migakimasu.</span><span class="exz">睡前刷牙。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">食事の前に手を洗います。</span><span class="exk">しょくじのまえにてをあらいます。</span><span class="exr">shokuji no mae ni te o araimasu.</span><span class="exz">吃飯前洗手。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>67. 〜の後で（～之後）</h3>
 <ul>
-<li><span class="exj" data-tag="例">授業の後で、図書館へ行きます。</span><span class="exk">じゅぎょうのあとで、としょかんへいきます。</span><span class="exr">jugyou no ato de, toshokan e ikimasu.</span><span class="exz">下課後去圖書館。</span></li>
+<li><span class="exj" data-tag="例">授業の後で、図書館へ行きます。</span><span class="exk">じゅぎょうのあとで、としょかんへいきます。</span><span class="exr">jugyou no ato de, toshokan e ikimasu.</span><span class="exz">下課後去圖書館。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>68. 〜とき（～的時候）</h3>
 <ul>
-<li><span class="exj" data-tag="例">暇なとき、音楽を聞きます。</span><span class="exk">ひまなとき、おんがくをききます。</span><span class="exr">himana toki, ongaku o kikimasu.</span><span class="exz">有空的時候聽音樂。</span></li>
+<li><span class="exj" data-tag="例">暇なとき、音楽を聞きます。</span><span class="exk">ひまなとき、おんがくをききます。</span><span class="exr">himana toki, ongaku o kikimasu.</span><span class="exz">有空的時候聽音樂。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>69. 〜でしょう（大概～吧）</h3>
 <ul>
-<li><span class="exj" data-tag="例">明日は晴れるでしょう。</span><span class="exk">あしたははれるでしょう。</span><span class="exr">ashita wa hareru deshou.</span><span class="exz">明天大概會放晴吧。</span></li>
+<li><span class="exj" data-tag="例">明日は晴れるでしょう。</span><span class="exk">あしたははれるでしょう。</span><span class="exr">ashita wa hareru deshou.</span><span class="exz">明天大概會放晴吧。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>70. 〜が、〜（前置、開場）</h3>
 <ul>
-<li><span class="exj" data-tag="例">すみませんが、駅はどこですか。</span><span class="exk">すみませんが、えきはどこですか。</span><span class="exr">sumimasen ga, eki wa doko desu ka.</span><span class="exz">不好意思，車站在哪裡？</span></li>
+<li><span class="exj" data-tag="例">すみませんが、駅はどこですか。</span><span class="exk">すみませんが、えきはどこですか。</span><span class="exr">sumimasen ga, eki wa doko desu ka.</span><span class="exz">不好意思，車站在哪裡？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>71. 名詞＋の＋とき／名詞修飾</h3>
 <ul>
-<li><span class="exj" data-tag="例">子供のとき、よく川で泳ぎました。</span><span class="exk">こどものとき、よくかわでおよぎました。</span><span class="exr">kodomo no toki, yoku kawa de oyogimashita.</span><span class="exz">小時候常在河裡游泳。</span></li>
+<li><span class="exj" data-tag="例">子供のとき、よく川で泳ぎました。</span><span class="exk">こどものとき、よくかわでおよぎました。</span><span class="exr">kodomo no toki, yoku kawa de oyogimashita.</span><span class="exz">小時候常在河裡游泳。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>72. 〜方（〜かた）（～的方法）</h3>
 <ul>
-<li><span class="exj" data-tag="例">この漢字の読み方を教えてください。</span><span class="exk">このかんじのよみかたをおしえてください。</span><span class="exr">kono kanji no yomikata o oshiete kudasai.</span><span class="exz">請告訴我這個漢字的讀法。</span></li>
+<li><span class="exj" data-tag="例">この漢字の読み方を教えてください。</span><span class="exk">このかんじのよみかたをおしえてください。</span><span class="exr">kono kanji no yomikata o oshiete kudasai.</span><span class="exz">請告訴我這個漢字的讀法。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>73. 疑問詞＋か（某～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">何か食べましたか。</span><span class="exk">なにかたべましたか。</span><span class="exr">nani ka tabemashita ka.</span><span class="exz">吃了什麼東西嗎？</span></li>
-<li><span class="exj" data-tag="例">誰か来ました。</span><span class="exk">だれかきました。</span><span class="exr">dare ka kimashita.</span><span class="exz">有人來了。</span></li>
+<li><span class="exj" data-tag="例">何か食べましたか。</span><span class="exk">なにかたべましたか。</span><span class="exr">nani ka tabemashita ka.</span><span class="exz">吃了什麼東西嗎？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">誰か来ました。</span><span class="exk">だれかきました。</span><span class="exr">dare ka kimashita.</span><span class="exz">有人來了。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>74. 疑問詞＋も＋否定（都不～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">何も買いませんでした。</span><span class="exk">なにもかいませんでした。</span><span class="exr">nani mo kaimasendeshita.</span><span class="exz">什麼都沒買。</span></li>
-<li><span class="exj" data-tag="例">どこも行きません。</span><span class="exk">どこもいきません。</span><span class="exr">doko mo ikimasen.</span><span class="exz">哪裡都不去。</span></li>
+<li><span class="exj" data-tag="例">何も買いませんでした。</span><span class="exk">なにもかいませんでした。</span><span class="exr">nani mo kaimasendeshita.</span><span class="exz">什麼都沒買。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
+<li><span class="exj" data-tag="例">どこも行きません。</span><span class="exk">どこもいきません。</span><span class="exr">doko mo ikimasen.</span><span class="exz">哪裡都不去。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>75. 〜という〜（叫做～的～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">「さくら」という店を知っていますか。</span><span class="exk">「さくら」というみせをしっていますか。</span><span class="exr">"sakura" to iu mise o shitte imasu ka.</span><span class="exz">你知道叫「さくら」的店嗎？</span></li>
+<li><span class="exj" data-tag="例">「さくら」という店を知っていますか。</span><span class="exk">「さくら」というみせをしっていますか。</span><span class="exr">"sakura" to iu mise o shitte imasu ka.</span><span class="exz">你知道叫「さくら」的店嗎？</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <h3>76. 〜をしています（從事～、正在做～）</h3>
 <ul>
-<li><span class="exj" data-tag="例">父は医者をしています。</span><span class="exk">ちちはいしゃをしています。</span><span class="exr">chichi wa isha o shite imasu.</span><span class="exz">父親是醫生。</span></li>
+<li><span class="exj" data-tag="例">父は医者をしています。</span><span class="exk">ちちはいしゃをしています。</span><span class="exr">chichi wa isha o shite imasu.</span><span class="exz">父親是醫生。</span><button class="say-btn" type="button" title="讀日文" aria-label="讀日文">🔊</button></li>
 </ul>
 <hr></section><section class="panel" data-panel="4" hidden><h1>第五章　動詞變化整理</h1>
 <h2 id="c4s0">5.1 動詞三大分類</h2>
@@ -8397,6 +8417,90 @@ addEventListener("scroll", ()=> bt.classList.toggle("show", scrollY>600), {passi
 bt.addEventListener("click", ()=> scrollTo({top:0, behavior:"smooth"}));
 
 show("home");
+
+/* ---- 例句語音朗讀（第四章）：單句、或整節依序播放日文 ---- */
+(function(){
+  const supported = 'speechSynthesis' in window;
+  if(!supported){
+    // 不支援語音時隱藏所有朗讀按鈕
+    document.querySelectorAll(".say-btn, .play-sec").forEach(b=> b.style.display="none");
+    return;
+  }
+  let jaVoice = null;
+  function pickVoice(){
+    const vs = speechSynthesis.getVoices();
+    jaVoice = vs.find(v=>/ja(-|_)?/i.test(v.lang)) ||
+              vs.find(v=>/japanese/i.test(v.name)) || null;
+  }
+  pickVoice();
+  speechSynthesis.onvoiceschanged = pickVoice;
+
+  let runId = 0;            // 每次播放的識別碼，用來讓被取消的序列自動失效
+  function stopAll(){
+    runId++;
+    speechSynthesis.cancel();
+    document.querySelectorAll(".say-btn.playing, .play-sec.playing")
+      .forEach(b=> b.classList.remove("playing"));
+  }
+  function makeUtter(text){
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "ja-JP"; u.rate = 0.9;
+    if(!jaVoice) pickVoice();
+    if(jaVoice) u.voice = jaVoice;
+    return u;
+  }
+
+  // 單句：讀該例句的日文（exj）
+  function speakOne(btn){
+    const li = btn.closest("li");
+    const exj = li && li.querySelector(".exj");
+    const text = exj ? exj.textContent.trim() : "";
+    stopAll();
+    if(!text) return;
+    const myRun = runId;
+    btn.classList.add("playing");
+    const u = makeUtter(text);
+    u.onend = u.onerror = ()=>{ if(myRun===runId) btn.classList.remove("playing"); };
+    speechSynthesis.speak(u);
+  }
+
+  // 整節：依序讀本節（h2 之後到下一個 h2 之前）所有例句
+  function speakSection(btn){
+    const wasPlaying = btn.classList.contains("playing");
+    stopAll();
+    if(wasPlaying) return;          // 再按一次 = 停止
+    const h2 = btn.closest("h2");
+    if(!h2) return;
+    const texts = [];
+    let el = h2.nextElementSibling;
+    while(el && el.tagName !== "H2"){
+      el.querySelectorAll(".exj").forEach(x=>{
+        const t = x.textContent.trim();
+        if(t) texts.push(t);
+      });
+      el = el.nextElementSibling;
+    }
+    if(!texts.length) return;
+    const myRun = runId;
+    btn.classList.add("playing");
+    let i = 0;
+    (function next(){
+      if(myRun !== runId){ return; }          // 已被其他播放取消
+      if(i >= texts.length){ btn.classList.remove("playing"); return; }
+      const u = makeUtter(texts[i++]);
+      u.onend = next;
+      u.onerror = ()=>{ if(myRun===runId) btn.classList.remove("playing"); };
+      speechSynthesis.speak(u);
+    })();
+  }
+
+  document.addEventListener("click", e=>{
+    const sec = e.target.closest(".play-sec");
+    if(sec){ speakSection(sec); return; }
+    const one = e.target.closest(".say-btn");
+    if(one){ speakOne(one); return; }
+  });
+})();
 </script>
 </body>
 </html>
